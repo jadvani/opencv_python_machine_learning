@@ -12,7 +12,7 @@ img = cv2.imread('restaurar.jpg')
 mask = cv2.imread('mask.jpg',0)
 
 
-mask[np.logical_and(mask>0, mask < 240)] = 0 
+mask[np.logical_and(mask>0, mask < 246)] = 0 
 cv2.imshow('mask',mask)
 dst = cv2.inpaint(img,mask,3,cv2.INPAINT_TELEA)
 
